@@ -1,5 +1,3 @@
-let mapleader = "\<space>"
-
 "================== winresizer shortcuts
 let g:winresizer_start_key = '<C-e>'
 let g:winresizer_vert_resize = 1

@@ -3,6 +3,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " Declare the list of plugins.
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'gcmt/taboo.vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'altercation/solarized'
@@ -13,10 +14,12 @@ Plug 'simeji/winresizer'
 Plug 'easymotion/vim-easymotion'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/plenary.nvim'  " Used along with telescope.
+Plug 'nvim-telescope/telescope.nvim' " Fast file finder and live grep.
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+let mapleader="\<Space>"
 
 source ~/.config/nvim/coc.vim
 source ~/.config/nvim/shortcuts.vim
@@ -25,6 +28,7 @@ source ~/.config/nvim/buffers.vim
 source ~/.config/nvim/tabs.vim
 source ~/.config/nvim/lsp.lua
 source ~/.config/nvim/pyx.vim
+source ~/.config/nvim/tabedit.vim
 
 :set number
 
