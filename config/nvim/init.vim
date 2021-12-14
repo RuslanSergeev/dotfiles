@@ -2,13 +2,12 @@
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " Declare the list of plugins.
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'gcmt/taboo.vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'altercation/solarized'
 Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
+" Plug 'williamboman/nvim-lsp-installer'
 Plug 'itchyny/lightline.vim'
 Plug 'simeji/winresizer'
 Plug 'easymotion/vim-easymotion'
@@ -21,7 +20,8 @@ call plug#end()
 
 let mapleader="\<Space>"
 
-source ~/.config/nvim/coc.vim
+" source ~/.config/nvim/coc.vim
+source ~/.config/nvim/coc.lua
 source ~/.config/nvim/shortcuts.vim
 source ~/.config/nvim/colors.vim
 source ~/.config/nvim/buffers.vim
