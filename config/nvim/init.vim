@@ -20,8 +20,8 @@ call plug#end()
 
 let mapleader="\<Space>"
 
-" source ~/.config/nvim/coc.vim
-source ~/.config/nvim/coc.lua
+source ~/.config/nvim/coc.vim
+" source ~/.config/nvim/coc.lua
 source ~/.config/nvim/shortcuts.vim
 source ~/.config/nvim/colors.vim
 source ~/.config/nvim/buffers.vim
