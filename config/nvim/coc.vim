@@ -168,7 +168,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 nmap <silent> <C-c> <Plug>(coc-cursors-position)
-nmap <silent> <C-d> <Plug>(coc-cursors-word)
-xmap <silent> <C-d> <Plug>(coc-cursors-range)
+nmap <silent> <C-a> <Plug>(coc-cursors-word)
+xmap <silent> <C-a> <Plug>(coc-cursors-range)
 " use normal command like `<leader>xi(`
 nmap <leader>x  <Plug>(coc-cursors-operator)

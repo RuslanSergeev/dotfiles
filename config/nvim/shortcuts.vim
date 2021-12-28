@@ -1,5 +1,5 @@
 "================== winresizer shortcuts
-let g:winresizer_start_key = '<C-e>'
+let g:winresizer_start_key = '<C-P>'
 let g:winresizer_vert_resize = 1
 let g:winresizer_horiz_resize = 1
 let g:winresizer_finish_with_escape = 1
@@ -19,7 +19,7 @@ map  <Leader>c <Plug>(easymotion-bd-f)
 nmap <Leader>c <Plug>(easymotion-overwin-f)
 
 " s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
 
 " Move to line
 map <Leader>l <Plug>(easymotion-bd-jk)
@@ -28,3 +28,7 @@ nmap <Leader>l <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" Terminal mappings
+tnoremap <Esc> <C-\><C-n>
+nnoremap T <cmd>bo term<cr>
