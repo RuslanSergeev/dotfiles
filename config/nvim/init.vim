@@ -15,6 +15,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lua/plenary.nvim'  " Used along with telescope.
 Plug 'nvim-telescope/telescope.nvim' " Fast file finder and live grep.
+" Plug 'brooth/far.vim'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -26,11 +27,13 @@ source ~/.config/nvim/shortcuts.vim
 source ~/.config/nvim/colors.vim
 source ~/.config/nvim/buffers.vim
 source ~/.config/nvim/tabs.vim
-source ~/.config/nvim/lsp.lua
+" source ~/.config/nvim/lsp.lua
 source ~/.config/nvim/pyx.vim
 source ~/.config/nvim/tabedit.vim
 
 :set number
+:set cursorline
+:set scrolloff=5
 
 " :augroup numbertoggle
 " :  autocmd!
