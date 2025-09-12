@@ -6,6 +6,8 @@ if has("autocmd")
 
     " Use actual tab chars in Makefiles.
     autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+    autocmd FileType c    set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+    autocmd FileType cpp  set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 endif
 
 " For everything else, use a tab width of 4 space chars.

@@ -13,21 +13,33 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 "================== Nerdtree shortcuts
 nnoremap <C-t> :NERDTreeToggle<CR>
 
+"================== Hop shortcuts
+"" Move to line
+map <Leader>l :HopLine<CR>
+
+"" Move to word
+nmap <Leader>w :HopWord<CR>
+
+"================== Git-blame shortcuts
+"" Git blame
+nmap <Leader>gb :GitBlameToggle<CR>
+nmap <Leader>gc :GitBlameCopySHA<CR>
+
 "================== Easymotion shortcuts
 " <Leader>f{char} to move to {char}
-map  <Leader>c <Plug>(easymotion-bd-f)
-nmap <Leader>c <Plug>(easymotion-overwin-f)
+" map  <Leader>c <Plug>(easymotion-bd-f)
+" nmap <Leader>c <Plug>(easymotion-overwin-f)
 
-" s{char}{char} to move to {char}{char}
-nmap <Leader>s <Plug>(easymotion-overwin-f2)
+"" s{char}{char} to move to {char}{char}
+"nmap <Leader>s <Plug>(easymotion-overwin-f2)
 
-" Move to line
-map <Leader>l <Plug>(easymotion-bd-jk)
-nmap <Leader>l <Plug>(easymotion-overwin-line)
+"" Move to line
+"map <Leader>l <Plug>(easymotion-bd-jk)
+"nmap <Leader>l <Plug>(easymotion-overwin-line)
 
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+"" Move to word
+"map  <Leader>w <Plug>(easymotion-bd-w)
+"nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 " Terminal mappings
 tnoremap <Esc> <C-\><C-n>
