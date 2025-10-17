@@ -1,0 +1,27 @@
+return {}
+-- return {
+--     "preservim/nerdtree",
+--     config = function()
+--         vim.keymap.set("n", "<C-t>", vim.cmd("NERDTreeToggle<CR>"), {silent=true, remap=false})
+--     end
+-- }
+--
+-- return {
+--   {
+--     "preservim/nerdtree",
+--     cmd = { "NERDTree", "NERDTreeToggle", "NERDTreeFind", "NERDTreeFocus" },
+--     -- Optional NERDTree settings
+--     init = function()
+--       -- close NERDTree when opening a file
+--       vim.g.NERDTreeQuitOnOpen = 1
+--       -- show hidden files (optional)
+--       -- vim.g.NERDTreeShowHidden = 1
+--     end,
+--     keys = {
+--       { "<leader>n", "<cmd>NERDTreeFocus<CR>",  mode = "n", desc = "NERDTree Focus" },
+--       { "<C-n>",     "<cmd>NERDTree<CR>",       mode = "n", desc = "NERDTree Open" },
+--       { "<C-t>",     "<cmd>NERDTreeToggle<CR>", mode = "n", desc = "NERDTree Toggle" },
+--       { "<C-f>",     "<cmd>NERDTreeFind<CR>",   mode = "n", desc = "NERDTree Find File" },
+--     },
+--   },
+-- }
