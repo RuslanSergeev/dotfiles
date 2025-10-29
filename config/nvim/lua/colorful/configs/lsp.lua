@@ -26,6 +26,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
     vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
+    -- vim.keymap.set('n', '<C-]>', vim.lsp.buf.scroll
+
     -- The existing working formatting configuration is good enough
     -- vim.keymap.set({'n', 'v'}, 'gq', vim.lsp.buf, opts)
   end,

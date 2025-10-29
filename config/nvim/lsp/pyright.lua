@@ -5,11 +5,15 @@
 --- `pyright`, a static type checker and language server for python
 
 local extra_paths = {
-  "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_assets",
-  "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_mimic",
-  "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab",
-  "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_tasks",
-  "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_rl",
+-- "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_assets",
+-- "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_mimic",
+-- "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab",
+-- "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_tasks",
+-- "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab_rl",
+-- "/home/sergeev-ruslan/git/IsaacLab/source/isaaclab/isaaclab/envs/",
+-- "/home/sergeev-ruslan/git/metaloco/IsaacLab/source/extensions/omni.isaac.lab",
+-- "/home/sergeev-ruslan/git/metaloco/IsaacLab/source/extensions/omni.isaac.lab_assets/",
+-- "/home/sergeev-ruslan/git/metaloco/IsaacLab/source/extensions/omni.isaac.lab_tasks/",
 }
 
 local function set_python_path(command)
@@ -33,11 +37,11 @@ return {
   cmd = { 'pyright-langserver', '--stdio' },
   filetypes = { 'python' },
   root_markers = {
-    'pyproject.toml',
-    'setup.py',
-    'setup.cfg',
-    'requirements.txt',
-    'Pipfile',
+--  'pyproject.toml',
+--  'setup.py',
+--  'setup.cfg',
+--  'requirements.txt',
+--  'Pipfile',
     'pyrightconfig.json',
     '.git',
   },
